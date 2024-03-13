@@ -1,0 +1,67 @@
+.home-content {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the background image */
+    padding-top: 40px; /* Adjust this value to match the height of your navigation */
+    /* If you want to ensure the content starts just below the navigation bar, use padding-top instead of margin-top */
+}
+
+.background-image {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 700px; /* Adjust the height as needed */
+    background-image: url('./../assets/back10.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the background image is behind the content */
+}
+
+.circular-image-container {
+    width: 480px; /* Adjust the width and height as needed */
+    height: 480px;
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide overflow content outside the circular container */
+    /* margin: 0 auto; Center the container horizontally */
+    margin-top: 8%;
+    margin-left: 60%;
+}
+
+.circular-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire circular container */
+}
+
+.brief {
+    position: absolute;
+
+    padding-top: 150px;
+    padding-left: 100px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons .btn-about {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #368ebe;
+    color: whitesmoke;
+    height: 40px;
+    width: 80px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.buttons .btn-cv {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #368ebe;
+    color: whitesmoke;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    
+}
+

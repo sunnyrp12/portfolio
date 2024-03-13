@@ -1,0 +1,59 @@
+.navigation {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px outset;
+    height: 20px;
+    background-color: whitesmoke;
+    z-index: 1000; /* Ensure the navigation panel is above other content */
+}
+
+.navigation-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Ensure the list items are displayed as flex items */
+    margin-left: auto; /* Push the list items to the right */
+
+}
+
+.navigation-home {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Ensure the list items are displayed as flex items */
+}
+
+.navigation-links li {
+    margin-left: 10px; /* Adjust spacing between links */
+    margin-right: 50px;
+}
+
+.navigation-links a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation-home a {
+    margin-left: 30px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation-links a:hover, .navigation-home a:hover {
+    color: #50aee1;
+}
+
+.navigation-links a:active, .navigation-home a:active {
+    color: yellow;
+    transform: translateY(30px); /* Translate link 30px down when clicked */
+}
+
+.navigation-links a.activeLink {
+    color: yellow; /* Change the color to your desired highlight color */
+}
